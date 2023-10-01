@@ -3,6 +3,8 @@ import streamlit as st
 st.title('Welcome to BMI Caculator')
 can_nang = st.number_input('Hãy điền cân nặng của bạn bằng đơn vị kg')
 chieu_cao = st.number_input('Hãy điền chiều cao của bạn bằng đơn vị m')
+if can_nang or chieu_cao <= 0:
+    st.error('Bạn cần phải điền số!')
 if st.button('Calculate BMI'):
     bmi = can_nang / (chieu_cao * chieu_cao)
     st.balloons()
@@ -17,6 +19,4 @@ if st.button('Calculate BMI'):
         st.error('Béo phì độ 1')
     if bmi >= 35:
         st.exception(can_nang('Béo phì độ 2 trở lên'))
-if can_nang or chieu_cao <= 0:
-    st.error('Bạn cần phải điền số!')
 st.image('BMI.png')

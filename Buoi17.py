@@ -6,8 +6,9 @@ chieu_cao = st.number_input('Hãy điền chiều cao của bạn bằng đơn v
 if st.button('Calculate BMI'):
     bmi = can_nang / (chieu_cao * chieu_cao)
     st.balloons()
-    st.subheader('Chỉ số BMI của bạn là: ' + str(bmi))
     st.image('BMI.png')
+    st.subheader('Chỉ số BMI của bạn là: ' + str(bmi))
+
     if bmi <= 18.5:
         st.info('Nhẹ cân')
     if bmi >= 18.5 and bmi <= 24.9:

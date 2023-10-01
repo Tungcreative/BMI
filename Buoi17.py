@@ -15,6 +15,6 @@ if st.button('Calculate BMI'):
         st.warning('Thừa cân')
     if bmi >= 30 and bmi <= 34.9:
         st.error('Béo phì độ I')
-    if bmi >= 35:
-        st.exception(can_nang('Béo phì độ II trở lên'))
+    if bmi >= 35 and bmi <= 100:
+        st.error('Béo phì độ II trở lên')
 st.image('BMI.png')

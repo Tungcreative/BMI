@@ -7,6 +7,7 @@ if st.button('Calculate BMI'):
     bmi = can_nang / (chieu_cao * chieu_cao)
     st.balloons()
     st.subheader('Chỉ số BMI của bạn là: ' + str(bmi))
+    st.image('BMI.png')
     if bmi <= 18.5:
         st.info('Nhẹ cân')
     if bmi >= 18.5 and bmi <= 24.9:
@@ -14,7 +15,6 @@ if st.button('Calculate BMI'):
     if bmi >= 25 and bmi <= 29.9:
         st.warning('Thừa cân')
     if bmi >= 30 and bmi <= 34.9:
-        st.error('Béo phì độ 1')
+        st.error('Béo phì độ I')
     if bmi >= 35:
-        st.exception(can_nang('Béo phì độ 2 trở lên'))
-st.image('BMI.png')
+        st.exception(can_nang('Béo phì độ II trở lên'))

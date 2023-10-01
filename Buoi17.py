@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Chào mừng bạn đến công cụ tính BMI')
+st.title('Chào mừng bạn đến bảng tính BMI')
 can_nang = st.number_input('Hãy điền cân nặng của bạn bằng đơn vị kg')
 chieu_cao = st.number_input('Hãy điền chiều cao của bạn bằng đơn vị m')
 if st.button('Calculate BMI'):

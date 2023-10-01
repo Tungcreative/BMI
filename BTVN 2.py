@@ -1,0 +1,5 @@
+so_1 = int (input ('Hãy nhập số đầu tiên vào đây: '))
+so_2 = int (input ('Hãy nhập số thứ hai vào đây: '))
+so_3 = int (input ('Hãy nhập số thứ ba vào đây: '))
+so_4 = int (input ('Hãy nhập số thứ tư vào đây: '))
+print ('Các số sắp xếp theo thứ tự (không giảm dần/từ bé đến lớn) là: ', sorted ([so_1, so_2, so_3, so_4], reverse=False) )
